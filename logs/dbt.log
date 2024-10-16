@@ -1,0 +1,121 @@
+[0m12:28:59.487061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10642ea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077852e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107784fb0>]}
+
+
+============================== 12:28:59.489187 | 938ddddb-d34e-4c6f-b981-506cb05e9a15 ==============================
+[0m12:28:59.489187 [info ] [MainThread]: Running with dbt=1.8.0
+[0m12:28:59.489440 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/jaber/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m12:28:59.495898 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/jaber/.dbt')}
+[0m12:28:59.496150 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m12:29:11.802545 [debug] [MainThread]: Starter project path: /Users/jaber/Documents/Github repositories/dbt-core/env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m12:29:11.818673 [info ] [MainThread]: 
+Your new dbt project "nyc_parking_violations" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:29:11.819211 [info ] [MainThread]: Setting up your profile.
+[0m12:29:25.713470 [info ] [MainThread]: Profile nyc_parking_violations written to /Users/jaber/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m12:29:25.714424 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 26.253262, "process_user_time": 0.573745, "process_kernel_time": 0.123749, "process_mem_max_rss": "108281856", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:29:25.714912 [debug] [MainThread]: Command `dbt init` succeeded at 12:29:25.714837 after 26.25 seconds
+[0m12:29:25.715106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107718b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102aa8440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b18500>]}
+[0m12:29:25.715296 [debug] [MainThread]: Flushing usage events
+[0m13:19:34.604888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071e0cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c26de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ea7890>]}
+
+
+============================== 13:19:34.606841 | 5645940b-4b7d-4635-b799-c5e85a4eba63 ==============================
+[0m13:19:34.606841 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:19:34.607092 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'profiles.yml', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir profiles.yml', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:19:34.607781 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jaber/Documents/Github repositories/dbt-core/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:19:34.608485 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.025923125, "process_user_time": 0.434019, "process_kernel_time": 0.075703, "process_mem_max_rss": "91553792", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:19:34.608698 [debug] [MainThread]: Command `dbt run` failed at 13:19:34.608661 after 0.03 seconds
+[0m13:19:34.608824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071e0cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107abe330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107457b90>]}
+[0m13:19:34.608939 [debug] [MainThread]: Flushing usage events
+[0m13:19:45.443839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b1ca40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042aadb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10630c590>]}
+
+
+============================== 13:19:45.445425 | 461d4da8-81aa-4804-bf1c-d5c827c98505 ==============================
+[0m13:19:45.445425 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:19:45.445683 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': './', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir ./', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:19:45.445877 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jaber/Documents/Github repositories/dbt-core/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:19:45.446465 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.0243265, "process_user_time": 0.427031, "process_kernel_time": 0.06348, "process_mem_max_rss": "91406336", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:19:45.446682 [debug] [MainThread]: Command `dbt run` failed at 13:19:45.446647 after 0.02 seconds
+[0m13:19:45.446807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b1ca40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105678a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065790a0>]}
+[0m13:19:45.446920 [debug] [MainThread]: Flushing usage events
+[0m13:20:19.509832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f5df10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066f20c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058bcda0>]}
+
+
+============================== 13:20:19.511352 | d9b70ac0-2edb-4c5e-81b9-8360884e14f2 ==============================
+[0m13:20:19.511352 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:20:19.511601 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles.yml', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir ./profiles.yml', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:20:19.511788 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jaber/Documents/Github repositories/dbt-core/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:20:19.512362 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.023455875, "process_user_time": 0.431548, "process_kernel_time": 0.064282, "process_mem_max_rss": "90701824", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:20:19.512572 [debug] [MainThread]: Command `dbt run` failed at 13:20:19.512535 after 0.02 seconds
+[0m13:20:19.512696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065eede0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064f5670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b4c440>]}
+[0m13:20:19.512807 [debug] [MainThread]: Flushing usage events
+[0m13:22:00.692825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b7e030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037d93a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f9b200>]}
+
+
+============================== 13:22:00.694380 | 057f8a8c-0c77-4cf0-9bd3-be21408edee3 ==============================
+[0m13:22:00.694380 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:22:00.694636 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './nyc_parking_violations', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir ./nyc_parking_violations', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:22:00.694834 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jaber/Documents/Github repositories/dbt-core/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:22:00.695413 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.023426458, "process_user_time": 0.426685, "process_kernel_time": 0.066537, "process_mem_max_rss": "90259456", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:22:00.695642 [debug] [MainThread]: Command `dbt run` failed at 13:22:00.695602 after 0.02 seconds
+[0m13:22:00.695763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104254ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104254fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104255190>]}
+[0m13:22:00.695876 [debug] [MainThread]: Flushing usage events
+[0m13:23:07.574111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070eb320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bb0c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106936b40>]}
+
+
+============================== 13:23:07.575653 | f3338792-4d62-4111-bf93-d21380eeacfe ==============================
+[0m13:23:07.575653 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:23:07.575905 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jaber/Documents/Github repositories/dbt-core/nyc_parking_violations', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir /Users/jaber/Documents/Github repositories/dbt-core/nyc_parking_violations', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:23:07.576092 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jaber/Documents/Github repositories/dbt-core/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:23:07.576683 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.023476792, "process_user_time": 0.428422, "process_kernel_time": 0.06273, "process_mem_max_rss": "92209152", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:23:07.576905 [debug] [MainThread]: Command `dbt run` failed at 13:23:07.576868 after 0.02 seconds
+[0m13:23:07.577028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086375c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10894d7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107aa30b0>]}
+[0m13:23:07.577145 [debug] [MainThread]: Flushing usage events
+[0m13:27:26.333459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ce43e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065d2930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069bc9b0>]}
+
+
+============================== 13:27:26.334990 | 4ce7faf2-56a1-46c3-bb04-da597cb2a2da ==============================
+[0m13:27:26.334990 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:27:26.335240 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jaber/Documents/Github repositories/dbt-core', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir /Users/jaber/Documents/Github repositories/dbt-core', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:27:26.335440 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jaber/Documents/Github repositories/dbt-core/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:27:26.336007 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.02358525, "process_user_time": 0.435087, "process_kernel_time": 0.052435, "process_mem_max_rss": "91160576", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:27:26.336225 [debug] [MainThread]: Command `dbt run` failed at 13:27:26.336188 after 0.02 seconds
+[0m13:27:26.336348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106641250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10310bd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069675f0>]}
+[0m13:27:26.336463 [debug] [MainThread]: Flushing usage events
