@@ -48,5 +48,5 @@ models:
     gold:
       +materialized: table
 
-tests:
+data_tests:
   +store_failures: true
